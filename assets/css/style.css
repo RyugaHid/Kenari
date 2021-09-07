@@ -1,0 +1,893 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Myriad GEO Mtavruli';
+    src: url('/assets/Fonts/MyriadGEOMtavruliMedium.ttf');
+}
+
+body {
+    font-family: 'Myriad GEO Mtavruli';
+    background-color: #F6F6F6;
+}
+
+.nav-container {
+    background-color: #EC3131;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 96px;
+    width: 1308px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.language p {
+    color: #FFFFFF;
+    padding: 5px 13px 5px 13px;
+    border: 1px solid #FFFFFF;
+}
+
+.shop {
+    padding-left: 32px;
+}
+
+.nav-menu {
+    width: 100%;
+    background-color: #EC3131;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 1308px;
+    height: 66px;
+    align-items: center;
+}
+
+.catalog {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.catalog li {
+    padding-right: 38px;
+}
+
+.search {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.search-btn {
+    padding-right: 36px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.menu-btn {
+    padding-left: 36px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+.main-container {
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.colection-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.colection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    max-width: 420px;
+    height: 700px;
+}
+
+.colection h1 {
+    padding-bottom: 30px;
+    font-size: 48px;
+}
+
+.col {
+    padding-bottom: 30px;
+}
+
+.colection span {
+    border-bottom: 2px solid #EC3131;
+}
+
+.colection p {
+    font-size: 15px;
+}
+
+.col-hr {
+    width: 153px;
+    display: none;
+    border: 1px solid #EC3131;
+}
+
+.prev {
+    color: #FFFFFF;
+}
+
+.next {
+    color: #FFFFFF;
+}
+
+.hr hr {
+    height: 5px;
+    width: 100%;
+    border: 2px solid #EC3131;
+}
+
+.swiper-pagination-bullet {
+    background-color: #EC3131;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F6F6F6;
+}
+
+.colection button {
+    background-color: #EC3131;
+    border: none;
+    width: 184px;
+    height: 53px;
+    color: #FFFFFF;
+    font-family: 'Myriad GEO Mtavruli';
+}
+
+.prev {
+    margin-left: 76%;
+}
+
+.next {
+    margin-right: 16%;
+}
+
+.slide {
+    width: 100%;
+    background-image: url(../img/main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-lines hr {
+    border: 1px solid #EC3131;
+    width: 150px;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    background-color: #EC3131;
+    align-items: center;
+    display: none;
+}
+
+.top-products {
+    width: 1308px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.main-pagi {
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 25px !important;
+    position: relative;
+    text-align: center;
+}
+
+.product-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-links a {
+    margin-left: 24px;
+    padding-bottom: 4px;
+}
+
+.active {
+    border-bottom: 2px solid #EC3131;
+    color: #000000;
+}
+
+.disabled {
+    color: #707070;
+}
+
+/* SunGlasses */
+
+.sun-slide {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.SunGlasses-Swiper {
+    max-width: 1308px;
+}
+
+.swiper-sun {
+    padding-top: 106px;
+    position: relative;
+    width: 100%;
+}
+
+.sun-prev {
+    left: 12%;
+    color: black;
+}
+
+.sun-next {
+    right: 12%;
+    color: black;
+}
+
+.description {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.description p:nth-child(3) {
+    padding-top: 10px;
+}
+
+.div {
+    width: 100%;
+}
+
+.price {
+    color: #EC3131;
+}
+
+.product-img hr {
+    width: 49px;
+    margin: 0 auto;
+    border: 1px solid #EC3131;
+}
+
+.inp {
+    position: relative;
+}
+
+.products-pagi {
+    transform: translateX(45.8%);
+}
+
+.more-products button {
+    background-color: #EC3131;
+    border: none;
+    width: 184px;
+    height: 53px;
+    color: #FFFFFF;
+    font-family: 'Myriad GEO Mtavruli';
+}
+
+.more-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1308px;
+    margin: 0 auto;
+    padding-top: 46px;
+}
+
+.main-pagi::before {
+    content: '';
+    display: block;
+    width: 878px;
+    height: 2px;
+    background: #EC3131;
+    left: -895px;
+    top: 36%;
+    position: absolute;
+    z-index: 10;
+}
+
+.main-pagi::after {
+    content: "";
+    display: block;
+    width: 880px;
+    height: 2px;
+    background: #EC3131;
+    right: -895px;
+    top: 36%;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Bordered Boxes Container */
+
+.boxes-container {
+    width: 100%;
+    padding-top: 208px;
+}
+
+.boxesSwiper {
+    max-width: 1308px;
+    margin: 0 auto;
+}
+
+.boxesSwiper hr {
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.box-1 {
+    background-image: url(../img/1.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2 {
+    background-image: url(../img/2.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-3 {
+    background-image: url(../img/3.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 95%;
+    width: 95%;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.box-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000025;
+}
+
+.box a {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 150px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box-wrapper:nth-child(1) {
+    box-shadow: 0 0 10px 0 #707070;
+}
+
+/* Brand Logos */
+
+.brand-container {
+    max-width: 1308px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 40px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    align-items: center;
+}
+
+.respo-logos {
+    display: none;
+}
+
+/* Background Kenari */
+
+.bg-kenari {
+    margin-top: 110px;
+    background-image: url(../img/bgPic.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.layer1 {
+    background-color: #ec31311e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer {
+    background-color: #0000004b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-kenari-res {
+    position: relative;
+    margin-top: 40px;
+    background-image: url(../img/bgPic.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-kenari img {
+    text-align: center;
+    max-width: 90%;
+    height: 120px;
+}
+
+.bg-kenari-res img {
+    text-align: center;
+    width: 166px;
+    height: 20px;
+}
+
+/* Contact and Address */
+
+.contact-wrapper {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.contact-container {
+    max-width: 885px;
+    height: 91px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.contact p {
+    padding-left: 15px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 160px;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.soc-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-media img {
+    padding: 10px;
+}
+
+.soc-1 {
+    flex-basis: 350px;
+}
+
+.soc-2 {
+    flex-basis: 300px;
+}
+
+.soc-3 {
+    flex-basis: auto;
+}
+
+.soc-3 span {
+    color: #DB5038;
+}
+
+.soc-3 p {
+    color: #707070;
+}
+
+/* Media */
+
+@media (max-width: 1346px) {
+    .nav-logo {
+        max-width: 970px;
+    }
+    .menu {
+        max-width: 970px;
+    }
+    .colection-container {
+        max-width: 970px;
+    }
+    .top-products {
+        max-width: 970px;
+    }
+    .SunGlasses-Swiper {
+        max-width: 970px;
+    }
+    .products-pagi {
+        transform: translateX(43.3%);
+    }
+    .prev {
+        margin-left: 76%;
+    }
+    .next {
+        margin-right: 11%;
+    }
+    .sun-prev {
+        display: none;
+    }
+    .sun-next {
+        display: none;
+    }
+    .brand-container {
+        max-width: 970px;
+    }
+    .contact-container {
+        max-width: 700px;
+    }
+    .footer {
+        max-width: 1100px;
+    }
+    .boxesSwiper {
+        max-width: 970px;
+    }
+    .box-1 {
+        height: 500px;
+    }
+    .box-2 {
+        height: 500px;
+    }
+    .box-3 {
+        height: 500px;
+    }
+    .boxes-container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:976px) {
+    .nav-logo {
+        max-width: 700px;
+        border: none;
+    }
+    .menu {
+        max-width: 700px;
+    }
+    .language {
+        display: none;
+    }
+    .logos {
+        display: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .colection-container {
+        max-width: 700px;
+    }
+    .colection {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .colection span {
+        border: none;
+    }
+    .colection h1 {
+        font-size: 40px;
+    }
+    .col-hr {
+        display: block;
+        margin: 0 auto;
+    }
+    .col {
+        padding-top: 25px;
+        padding-bottom: 300px;
+    }
+    .next {
+        display: none;
+    }
+    .prev {
+        display: none;
+    }
+    .btns {
+        display: flex;
+    }
+    .top-products {
+        max-width: 700px;
+    }
+    .product-links h2 {
+        display: none;
+    }
+    .product-links div {
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        height: 30px;
+    }
+    .SunGlasses-Swiper {
+        max-width: 700px;
+    }
+    .products-pagi {
+        transform: translateX(43.3%);
+    }
+    .main-pagi::before {
+        content: '';
+        display: none;
+    }
+    .main-pagi::after {
+        content: "";
+        display: none;
+    }
+    .brand-container {
+        max-width: 700px;
+    }
+    .fullscr-logos {
+        display: none;
+    }
+    .respo-logos {
+        display: block;
+    }
+    .brand-container {
+        height: 80px;
+    }
+    .contact-wrapper {
+        padding: 20px;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+    .contact {
+        padding: 10px;
+    }
+    .footer {
+        max-width: 700px;
+        flex-direction: column;
+    }
+    .soc-1 {
+        margin-top: 15px;
+    }
+    .soc-3 {
+        padding-top: 15px;
+        margin-bottom: 25px;
+    }
+    .boxesSwiper {
+        max-width: 700px;
+    }
+    .box p {
+        font-size: 15px;
+    }
+    .box h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:700px) {
+    .top-products {
+        max-width: 300px;
+    }
+    .btn-pagi {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .btn-pagi {
+        padding-top: 60px;
+    }
+    .SunGlasses-Swiper {
+        max-width: 500px;
+    }
+    .products-pagi {
+        width: fit-content !important;
+        transform: translateX(42%);
+        top: 40px;
+        left: -20px !important;
+    }
+    .brand-container {
+        max-width: 400px;
+    }
+    .bg-kenari {
+        display: none;
+    }
+    .bg-kenari-res {
+        display: flex;
+        height: 250px;
+    }
+    .bg-kenari-res img {
+        width: 166px;
+    }
+    .box-1 {
+        height: 500px;
+    }
+    .box-2 {
+        height: 500px;
+    }
+    .box-3 {
+        height: 500px;
+    }
+}
+
+@media (max-width:550px) {
+    .SunGlasses-Swiper {
+        max-width: 300px;
+    }
+    .brand-container {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .sun-prev {
+        display: none;
+    }
+    .sun-next {
+        display: none;
+    }
+    .prev {
+        margin-left: 75%;
+    }
+}
+
+@media (max-width: 1810px) {
+    .sun-prev {
+        left: 8%;
+    }
+    .sun-next {
+        right: 8%;
+    }
+}
+
+@media (max-width: 1640px) {
+    .sun-prev {
+        left: 2%;
+    }
+    .sun-next {
+        right: 2%;
+    }
+}
+
+@media (max-width:380px) {
+    .colection h1 {
+        font-size: 27px;
+    }
+    .col p {
+        font-size: 13px;
+    }
+}
