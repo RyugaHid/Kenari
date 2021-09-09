@@ -84,28 +84,22 @@ body {
 }
 
 .main-container {
-    height: 800px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    height: 82vh;
     color: #FFFFFF;
 }
 
 .colection-container {
-    display: flex;
-    justify-content: space-between;
     width: 1300px;
-    align-items: center;
     margin: 0 auto;
 }
 
 .colection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: start;
     max-width: 420px;
-    height: 700px;
+    height: 100%;
 }
 
 .colection h1 {
@@ -135,8 +129,16 @@ body {
     color: #FFFFFF;
 }
 
+.prev::after {
+    font-size: 25px;
+}
+
 .next {
     color: #FFFFFF;
+}
+
+.next::after {
+    font-size: 25px;
 }
 
 .hr hr {
@@ -150,6 +152,17 @@ body {
     width: 15px;
     height: 15px;
     border: 1px solid #F6F6F6;
+}
+
+.products-pagi .swiper-pagination-bullet-active {
+    border: 2px solid #FFFFFF !important;
+    background: #EC3131 !important;
+    box-shadow: 0px 0px 0px 1px #EC3131;
+}
+
+.products-pagi .swiper-pagination-bullet {
+    background: #FFFFFF;
+    border: 1px solid #EC3131;
 }
 
 .colection button {
@@ -240,7 +253,12 @@ body {
     justify-content: space-between;
 }
 
-.product-links a {
+.product-links a:nth-child(2) {
+    margin-left: 24px;
+    padding-bottom: 4px;
+}
+
+.product-links a:nth-child(3) {
     margin-left: 24px;
     padding-bottom: 4px;
 }
@@ -251,7 +269,7 @@ body {
 }
 
 .disabled {
-    color: #707070;
+    color: #70707057;
 }
 
 /* SunGlasses */
@@ -279,6 +297,14 @@ body {
 .sun-next {
     right: 12%;
     color: black;
+}
+
+.sun-next::after {
+    font-size: 25px;
+}
+
+.sun-prev::after {
+    font-size: 25px;
 }
 
 .description {
@@ -381,6 +407,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .box-2 {
@@ -437,20 +464,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
 }
 
-.box h2 {
-    padding-bottom: 15px;
-    text-align: center;
+.box-1:hover a {
+    opacity: 1;
+    bottom: 60px;
+}
+
+.box-2:hover a {
+    opacity: 1;
+    bottom: 60px;
+}
+
+.box-3:hover a {
+    opacity: 1;
+    bottom: 60px;
 }
 
 .box p {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 10%;
+    transition: 0.5s;
 }
 
-.box-wrapper:nth-child(1) {
-    box-shadow: 0 0 10px 0 #707070;
+.box-1:hover p {
+    margin-bottom: 20%;
+}
+
+.box-2:hover p {
+    margin-bottom: 20%;
+}
+
+.box-3:hover p {
+    margin-bottom: 20%;
 }
 
 /* Brand Logos */
@@ -631,6 +684,12 @@ footer {
     .top-products {
         max-width: 970px;
     }
+    .firstSwiper {
+        height: 100%;
+    }
+    .main-container {
+        height: calc(100vh - 96px - 90px);
+    }
     .SunGlasses-Swiper {
         max-width: 970px;
     }
@@ -641,7 +700,7 @@ footer {
         margin-left: 76%;
     }
     .next {
-        margin-right: 11%;
+        margin-right: 13%;
     }
     .sun-prev {
         display: none;
@@ -658,6 +717,9 @@ footer {
     .footer {
         max-width: 1100px;
     }
+    footer {
+        margin-bottom: 90px;
+    }
     .boxesSwiper {
         max-width: 970px;
     }
@@ -673,9 +735,24 @@ footer {
     .boxes-container {
         padding-top: 100px;
     }
+    .box-1:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
+    .box-2:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
+    .box-3:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
 }
 
 @media (max-width:976px) {
+    .colection-container {
+        height: 100%;
+    }
     .nav-logo {
         max-width: 700px;
         border: none;
@@ -714,7 +791,6 @@ footer {
     }
     .col {
         padding-top: 25px;
-        padding-bottom: 300px;
     }
     .next {
         display: none;
@@ -724,12 +800,18 @@ footer {
     }
     .btns {
         display: flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 5;
     }
     .top-products {
         max-width: 700px;
+        padding-top: 30px;
     }
-    .product-links h2 {
-        display: none;
+    .product-links {
+        flex-direction: column;
+        justify-content: start;
     }
     .product-links div {
         overflow-y: hidden;
@@ -739,6 +821,9 @@ footer {
     }
     .SunGlasses-Swiper {
         max-width: 700px;
+    }
+    .swiper-sun {
+        padding-top: 28px;
     }
     .products-pagi {
         transform: translateX(43.3%);
@@ -788,17 +873,36 @@ footer {
     .boxesSwiper {
         max-width: 700px;
     }
-    .box p {
-        font-size: 15px;
+    .box-1:hover a {
+        opacity: 1;
+        bottom: 60px;
     }
-    .box h2 {
-        font-size: 16px;
+    .box-2:hover a {
+        opacity: 1;
+        bottom: 60px;
+    }
+    .box-3:hover a {
+        opacity: 1;
+        bottom: 60px;
+    }
+    .product-links h2 {
+        padding-bottom: 50px;
+    }
+    .colection p:nth-child(4) {
+        margin-top: auto;
+        margin-bottom: 17%;
+    }
+    .colection h1 {
+        margin-top: auto;
     }
 }
 
 @media (max-width:700px) {
     .top-products {
         max-width: 300px;
+    }
+    .product-links h2 {
+        text-align: center;
     }
     .btn-pagi {
         display: flex;
@@ -812,7 +916,7 @@ footer {
         padding-top: 60px;
     }
     .SunGlasses-Swiper {
-        max-width: 500px;
+        max-width: 550px;
     }
     .products-pagi {
         width: fit-content !important;
@@ -821,7 +925,7 @@ footer {
         left: -20px !important;
     }
     .brand-container {
-        max-width: 400px;
+        max-width: 420px;
     }
     .bg-kenari {
         display: none;
@@ -846,10 +950,28 @@ footer {
 
 @media (max-width:550px) {
     .SunGlasses-Swiper {
-        max-width: 300px;
+        max-width: 400px;
     }
     .brand-container {
         max-width: 350px;
+    }
+    .box-1:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
+    .box-2:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
+    .box-3:hover a {
+        opacity: 1;
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .SunGlasses-Swiper {
+        width: 300px;
     }
 }
 
