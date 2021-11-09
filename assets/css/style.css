@@ -8,12 +8,64 @@
 
 @font-face {
     font-family: 'Myriad GEO Mtavruli';
-    src: url('/assets/Fonts/MyriadGEOMtavruliMedium.ttf');
+    src: url('../fonts/MyriadGEOMtavruliMedium.ttf');
 }
 
 body {
     font-family: 'Myriad GEO Mtavruli';
     background-color: #F6F6F6;
+    position: relative;
+}
+
+.menu-wrapper {
+    background-color: #FFFFFF;
+}
+
+.burger-menu ul {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.burger-menu a {
+    color: #323030;
+}
+
+.burger-menu a:nth-child(1) {
+    color: #EC3131;
+}
+
+.burger-menu {
+    margin: 0 auto;
+    max-width: 1308px;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu-padd {
+    padding-left: 24px;
+}
+
+.close {
+    display: none;
+}
+
+.search a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
 .nav-container {
@@ -33,10 +85,18 @@ body {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.language p {
+.language {
+    display: flex;
+}
+
+.language-disable {
+    color: #ffffff6c;
+    padding-right: 15px;
+}
+
+.language-active {
     color: #FFFFFF;
-    padding: 5px 13px 5px 13px;
-    border: 1px solid #FFFFFF;
+    padding-right: 15px;
 }
 
 .shop {
@@ -48,6 +108,23 @@ body {
     background-color: #EC3131;
     display: flex;
     justify-content: center;
+}
+
+.colection h1 {
+    position: relative;
+    white-space: nowrap;
+}
+
+.colection h1::before {
+    content: '';
+    display: block;
+    width: 35%;
+    height: 2px;
+    background: #EC3131;
+    left: 2px;
+    top: 65%;
+    position: absolute;
+    z-index: 10;
 }
 
 .menu {
@@ -67,6 +144,10 @@ body {
     padding-right: 38px;
 }
 
+.catalog a {
+    color: #FFFFFF;
+}
+
 .search {
     display: flex;
     color: #FFFFFF;
@@ -77,8 +158,8 @@ body {
     border-right: 1px solid #FFFFFF;
 }
 
-.menu-btn {
-    padding-left: 36px;
+.burg {
+    padding-left: 26px;
     padding-right: 12px;
     align-self: center;
 }
@@ -182,12 +263,67 @@ body {
     margin-right: 16%;
 }
 
+.main-pagi {
+    display: flex;
+    align-items: center;
+}
+
+.main-pagi .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #707070;
+    width: 12px;
+    height: 12px;
+    margin: 7px !important;
+}
+
+.main-pagi .swiper-pagination-bullet-active {
+    background: #EC3131;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 1px #FFF;
+    width: 10px;
+    height: 10px;
+}
+
+.main-pagi::before {
+    content: '';
+    display: block;
+    width: 878px;
+    height: 2px;
+    background: #EC3131;
+    left: -895px;
+    top: 47%;
+    position: absolute;
+    z-index: 10;
+}
+
+.main-pagi::after {
+    content: "";
+    display: block;
+    width: 880px;
+    height: 2px;
+    background: #EC3131;
+    right: -895px;
+    top: 47%;
+    position: absolute;
+    z-index: 10;
+}
+
+.main-pagi {
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 35px !important;
+    position: relative;
+    text-align: center;
+}
+
 .slide {
     width: 100%;
-    background-image: url(../img/main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #ec313191;
+    background-blend-mode: multiply;
 }
 
 .swiper {
@@ -223,6 +359,8 @@ body {
     width: 150px;
 }
 
+/* Responsive Navigation  */
+
 .btns {
     width: 100%;
     display: flex;
@@ -233,19 +371,16 @@ body {
     display: none;
 }
 
+/* Top Products  */
+
 .top-products {
     width: 1308px;
     margin: 0 auto;
     padding-top: 130px;
 }
 
-.main-pagi {
-    width: fit-content !important;
-    left: 50% !important;
-    transform: translateX(-50%);
-    bottom: 25px !important;
-    position: relative;
-    text-align: center;
+.product-links a {
+    font-size: 16px;
 }
 
 .product-links {
@@ -269,7 +404,67 @@ body {
 }
 
 .disabled {
-    color: #70707057;
+    color: #7070708a;
+}
+
+/* Responsive Menu */
+
+.responsive-menu {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+}
+
+.hide {
+    position: fixed;
+    left: 0;
+    top: 100vh;
+}
+
+.show {
+    position: static;
+    top: 0;
+}
+
+.responsive-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-cont a:nth-child(1) {
+    color: #323030;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.catalog-cont a:nth-child(2) {
+    background-color: #EC3131;
+    padding: 10px 15px;
+}
+
+.catalog-cont {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    margin-top: 15px;
+}
+
+.responsive-menu-nav {
+    padding: 15px;
+}
+
+.responsive-menu-nav a {
+    color: #323030;
+}
+
+.responsive-menu-nav li {
+    margin-top: 24px;
+}
+
+.responsive-menu-nav ul {
+    padding-bottom: 100px;
 }
 
 /* SunGlasses */
@@ -324,7 +519,15 @@ body {
     color: #EC3131;
 }
 
-.product-img hr {
+.product-img {
+    height: 250px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun-slide hr {
     width: 49px;
     margin: 0 auto;
     border: 1px solid #EC3131;
@@ -356,28 +559,182 @@ body {
     padding-top: 46px;
 }
 
-.main-pagi::before {
-    content: '';
-    display: block;
-    width: 878px;
-    height: 2px;
-    background: #EC3131;
-    left: -895px;
-    top: 36%;
-    position: absolute;
-    z-index: 10;
+/* Sale Procucts  */
+
+.sales-wrapper {
+    width: 100%;
+    background-color: #EC3131;
 }
 
-.main-pagi::after {
-    content: "";
-    display: block;
-    width: 880px;
-    height: 2px;
-    background: #EC3131;
-    right: -895px;
-    top: 36%;
+.sale-products h2 {
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.sale-products {
+    width: 1308px;
+    margin: 0 auto;
+    padding-top: 83px;
+    margin-top: 160px;
+}
+
+.sale-product-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale-product-links a:nth-child(2) {
+    margin-left: 24px;
+    padding-bottom: 4px;
+}
+
+.sale-product-links a:nth-child(3) {
+    margin-left: 24px;
+    padding-bottom: 4px;
+}
+
+.sale-active {
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.sale-disabled {
+    color: #ffffff7e;
+}
+
+/* Sales Sunglasses  */
+
+.sun-slide {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.SunGlasses-Swiper {
+    max-width: 1308px;
+}
+
+.swiper-sun {
+    padding-top: 106px;
+    position: relative;
+    width: 100%;
+}
+
+.react p:nth-child(3) {
+    float: right;
+    color: #DB5038;
+    font-size: 19px;
+    font-family: 'FiraGO';
+    font-weight: normal;
+}
+
+.description p:nth-child(3) {
+    position: relative;
+}
+
+.description p:nth-child(3):after {
+    content: '₾';
     position: absolute;
-    z-index: 10;
+    color: #EC3131;
+    font-weight: normal;
+    font-size: 16px;
+    top: 35%;
+}
+
+.old-price {
+    position: absolute;
+    left: 20%;
+    text-decoration: line-through;
+    color: #7070709c;
+}
+
+.sale-prev {
+    color: #FFFFFF;
+}
+
+.sale-next {
+    color: #FFFFFF;
+}
+
+.sun-next::after {
+    font-size: 25px;
+}
+
+.sun-prev::after {
+    font-size: 25px;
+}
+
+.description {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.description p:nth-child(3) {
+    padding-top: 10px;
+}
+
+.div {
+    width: 100%;
+}
+
+.price {
+    color: #EC3131;
+}
+
+.product-img hr {
+    width: 49px;
+    margin: 0 auto;
+    border: 1px solid #EC3131;
+}
+
+.inp {
+    position: relative;
+}
+
+.products-pagi {
+    transform: translateX(45.8%);
+}
+
+.sale-btn-pagi {
+    padding-bottom: 46px;
+}
+
+.sale-btn-pagi .swiper-pagination {
+    bottom: 60px;
+}
+
+.sale-btn-pagi .swiper-pagination-bullet-active {
+    border: 2px solid #EC3131 !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 0px 1px #FFFFFF !important;
+}
+
+.sale-btn-pagi .swiper-pagination-bullet {
+    background: #EC3131;
+    border: 2px solid #FFFFFF;
+}
+
+.sale-more-products a {
+    background-color: #FFFFFF;
+    width: 184px;
+    height: 53px;
+    color: #000000;
+    font-family: 'Myriad GEO Mtavruli';
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sale-more-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1308px;
+    margin: 0 auto;
+    padding-top: 46px;
+}
+
+.sale-sun-prev {
+    color: #FFFFFF;
 }
 
 /* Bordered Boxes Container */
@@ -387,9 +744,14 @@ body {
     padding-top: 208px;
 }
 
+.boxes-container hr {
+    margin-top: 150px;
+}
+
 .boxesSwiper {
     max-width: 1308px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .boxesSwiper hr {
@@ -420,6 +782,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #00000025;
+    background-blend-mode: color;
 }
 
 .box-3 {
@@ -432,6 +796,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #00000025;
+    background-blend-mode: color;
 }
 
 .box {
@@ -469,12 +835,30 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    bottom: -50px;
 }
 
 .box-1:hover a {
     opacity: 1;
     bottom: 60px;
+}
+
+.box-1:hover {
+    transition: 0.5s ease-in;
+    background-color: rgb(0 0 0 / 12%);
+    background-blend-mode: darken;
+}
+
+.box-2:hover {
+    transition: 0.5s ease-in;
+    background-color: rgb(0 0 0 / 20%);
+    background-blend-mode: darken;
+}
+
+.box-3:hover {
+    transition: 0.5s ease-in;
+    background-color: rgb(0 0 0 / 20%);
+    background-blend-mode: darken;
 }
 
 .box-2:hover a {
@@ -490,7 +874,7 @@ body {
 .box p {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: -5%;
     transition: 0.5s;
 }
 
@@ -525,8 +909,28 @@ body {
     align-items: center;
 }
 
+.brand-logos img {
+    width: 180px;
+}
+
 .respo-logos {
     display: none;
+}
+
+.logosSwiper .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosSwiper img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.react svg path {
+    stroke: #DB5038;
 }
 
 /* Background Kenari */
@@ -645,8 +1049,24 @@ footer {
     align-items: center;
 }
 
-.soc-media img {
-    padding: 10px;
+.soc-1 svg {
+    margin: 10px;
+}
+
+.soc-1 path {
+    transition: 0.5s ease-in;
+}
+
+.soc-1 rect {
+    transition: 0.5s ease-in;
+}
+
+.soc-1 svg:hover path {
+    stroke: #DB5038;
+}
+
+.soc-1 svg:hover rect {
+    stroke: #DB5038;
 }
 
 .soc-1 {
@@ -678,7 +1098,16 @@ footer {
     .menu {
         max-width: 970px;
     }
+    .burger-menu {
+        max-width: 970px;
+    }
+    .burger-menu a {
+        font-size: 14px;
+    }
     .colection-container {
+        max-width: 970px;
+    }
+    .sale-products {
         max-width: 970px;
     }
     .top-products {
@@ -717,9 +1146,6 @@ footer {
     .footer {
         max-width: 1100px;
     }
-    footer {
-        margin-bottom: 90px;
-    }
     .boxesSwiper {
         max-width: 970px;
     }
@@ -753,9 +1179,15 @@ footer {
     .colection-container {
         height: 100%;
     }
+    .description p::before {
+        display: none;
+    }
     .nav-logo {
         max-width: 700px;
         border: none;
+    }
+    .burger-menu {
+        display: none;
     }
     .menu {
         max-width: 700px;
@@ -782,8 +1214,16 @@ footer {
     .colection span {
         border: none;
     }
+    .old-price {
+        display: none;
+    }
     .colection h1 {
         font-size: 40px;
+        padding-bottom: 15px;
+        font-weight: normal;
+    }
+    .colection h1::before {
+        display: none;
     }
     .col-hr {
         display: block;
@@ -804,6 +1244,23 @@ footer {
         width: 100%;
         bottom: 0;
         z-index: 5;
+    }
+    .sale-products {
+        max-width: 700px;
+        padding-top: 30px;
+    }
+    .sale-product-links {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .sale-product-links div {
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        height: 30px;
+    }
+    .sale-product-links h2 {
+        padding-bottom: 50px;
     }
     .top-products {
         max-width: 700px;
@@ -859,6 +1316,9 @@ footer {
     .contact {
         padding: 10px;
     }
+    footer {
+        margin-bottom: 90px;
+    }
     .footer {
         max-width: 700px;
         flex-direction: column;
@@ -898,11 +1358,35 @@ footer {
 }
 
 @media (max-width:700px) {
-    .top-products {
-        max-width: 300px;
+    .boxesSwiper hr {
+        margin-top: 50px;
+        margin-bottom: 0;
     }
-    .product-links h2 {
-        text-align: center;
+    .sale-products {
+        max-width: 100%;
+        padding-left: 25px;
+    }
+    .top-products {
+        max-width: 100%;
+        padding-left: 25px;
+    }
+    .nav-logo {
+        height: 70px;
+    }
+    .main-container {
+        height: calc(100vh - 70px - 90px);
+    }
+    .nav-logo img {
+        max-width: 250px;
+    }
+    .sale-btn-pagi {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        max-width: 300px;
+        margin: 0 auto;
+        padding-top: 60px;
     }
     .btn-pagi {
         display: flex;
@@ -926,6 +1410,7 @@ footer {
     }
     .brand-container {
         max-width: 420px;
+        margin-top: 20px;
     }
     .bg-kenari {
         display: none;
@@ -955,6 +1440,9 @@ footer {
     .brand-container {
         max-width: 350px;
     }
+    .product-img {
+        height: 150px;
+    }
     .box-1:hover a {
         opacity: 1;
         bottom: 40px;
@@ -967,11 +1455,42 @@ footer {
         opacity: 1;
         bottom: 40px;
     }
+    .nav-logo img {
+        max-width: 164px;
+    }
+    .nav-logo {
+        height: 60px;
+    }
+    .main-container {
+        height: calc(100vh - 60px - 90px);
+    }
+    .description p:nth-child(3):after {
+        top: 33%;
+    }
 }
 
 @media (max-width: 400px) {
     .SunGlasses-Swiper {
         width: 300px;
+    }
+    .sale-products {
+        max-width: 100%;
+        padding-left: 25px;
+    }
+    .top-products {
+        max-width: 100%;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .sale-products {
+        max-width: 100%;
+        padding-left: 10px;
+    }
+    .top-products {
+        max-width: 100%;
+        padding-left: 10px;
     }
 }
 
@@ -1008,8 +1527,17 @@ footer {
 @media (max-width:380px) {
     .colection h1 {
         font-size: 27px;
+        margin-top: 15px;
     }
-    .col p {
-        font-size: 13px;
+    .col {
+        font-family: "Helvetica Neue World";
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+        color: #fff;
+    }
+    .col p:nth-child(3) {
+        display: none;
     }
 }

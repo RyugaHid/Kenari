@@ -1,0 +1,739 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Myriad GEO Mtavruli';
+    src: url('../fonts/MyriadGEOMtavruliMedium.ttf');
+}
+
+body {
+    font-family: 'Myriad GEO Mtavruli';
+}
+
+/* Navigation  */
+
+.nav-container {
+    background-color: #EC3131;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.black {
+    color: black;
+}
+
+.language {
+    display: flex;
+}
+
+.language-disable {
+    color: #ffffff6c;
+    padding-right: 15px;
+}
+
+.language-active {
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+
+.catalog a {
+    color: #FFFFFF;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 96px;
+    width: 1308px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.language p {
+    color: #FFFFFF;
+    padding: 5px 13px 5px 13px;
+    border: 1px solid #FFFFFF;
+}
+
+.shop {
+    padding-left: 32px;
+}
+
+.nav-menu {
+    width: 100%;
+    background-color: #EC3131;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 1308px;
+    height: 66px;
+    align-items: center;
+}
+
+.catalog {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.catalog li {
+    padding-right: 38px;
+}
+
+.search-btn-resp {
+    display: none;
+}
+
+.resp-search {
+    display: none;
+}
+
+.search {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.search-btn {
+    padding-right: 36px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.burg {
+    padding-left: 26px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+.resp-main-logo {
+    display: none;
+}
+
+.burger-menu ul {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.burger-menu a:nth-child(3) {
+    color: #EC3131;
+}
+
+.burger-menu a {
+    color: #323030;
+}
+
+.burger-menu {
+    margin: 0 auto;
+    max-width: 1308px;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu-padd {
+    padding-left: 24px;
+}
+
+.close {
+    display: none;
+}
+
+.search a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/* current page link  */
+
+.current-page {
+    width: 100%;
+    background-color: #F6F6F6;
+    height: 7vh;
+}
+
+.page-container {
+    max-width: 1308px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.page-container span:nth-child(1) {
+    padding-right: 19px;
+}
+
+.page-container span:nth-child(2) {
+    position: relative;
+    color: #EC3131;
+}
+
+.page-container span:nth-child(2)::before {
+    content: '';
+    border-radius: 100%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #EC3131;
+    left: -10.8%;
+    top: 42%;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Responsive Navigation  */
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    background-color: #EC3131;
+    align-items: center;
+    display: none;
+}
+
+/* Responsive Menu */
+
+.responsive-menu {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+}
+
+.hide {
+    position: fixed;
+    left: 0;
+    top: 100vh;
+}
+
+.show {
+    position: static;
+    top: 0;
+}
+
+.responsive-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-cont a:nth-child(1) {
+    color: #323030;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.catalog-cont a:nth-child(2) {
+    background-color: #EC3131;
+    padding: 10px 15px;
+}
+
+.catalog-cont {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    margin-top: 15px;
+}
+
+.responsive-menu-nav {
+    padding: 15px;
+}
+
+.responsive-menu-nav a {
+    color: #323030;
+}
+
+.responsive-menu-nav li {
+    margin-top: 24px;
+}
+
+.responsive-menu-nav ul {
+    padding-bottom: 100px;
+}
+
+/* Main Content  */
+
+.main-content {
+    margin-top: 94px;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1308px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 2px solid #D5D5D5;
+    padding-bottom: 108px;
+}
+
+.main-about {
+    flex-basis: 700px;
+}
+
+.main-about h1 {
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+}
+
+.main-about h1::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background: #EC3131;
+    left: 0.2%;
+    top: 100%;
+    position: absolute;
+}
+
+.main-about h2 {
+    position: relative;
+    padding-top: 62px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.main-about p:nth-child(2) {
+    padding-top: 80px;
+}
+
+.main-about p:nth-child(4) {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.main-about h2::after {
+    content: 'კენარი?';
+    padding-left: 8px;
+    color: #EC3131;
+}
+
+.main-about p {
+    color: #999999;
+    line-height: 1.7em;
+}
+
+.main-pic {
+    width: 100%;
+    background-image: url(../img/Mask\ Group\ 5.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-basis: 600px;
+    margin-right: 7%;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.8));
+}
+
+/* Brand Logos  */
+
+.brand-container {
+    max-width: 1308px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 108px;
+}
+
+.brand-logos:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    align-items: center;
+}
+
+.brand-logos:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.respo-logos {
+    display: none;
+}
+
+/* Contact and Address */
+
+.contact-wrapper {
+    width: 100%;
+    background-color: #F6F6F6;
+    margin-top: 140px;
+}
+
+.contact-container {
+    max-width: 885px;
+    height: 91px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.contact p {
+    padding-left: 15px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 160px;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.soc-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-1 svg {
+    margin: 10px;
+}
+
+.soc-1 path {
+    transition: 0.5s ease-in;
+}
+
+.soc-1 rect {
+    transition: 0.5s ease-in;
+}
+
+.soc-1 svg:hover path {
+    stroke: #DB5038;
+}
+
+.soc-1 svg:hover rect {
+    stroke: #DB5038;
+}
+
+.soc-1 {
+    flex-basis: 350px;
+}
+
+.soc-2 {
+    flex-basis: 300px;
+}
+
+.soc-3 {
+    flex-basis: auto;
+}
+
+.soc-3 span {
+    color: #DB5038;
+}
+
+.soc-3 p {
+    color: #707070;
+}
+
+/* Media  */
+
+@media (max-width: 1346px) {
+    .nav-logo {
+        max-width: 970px;
+    }
+    .menu {
+        max-width: 970px;
+    }
+    .page-container {
+        max-width: 970px;
+    }
+    .main-container {
+        max-width: 970px;
+    }
+    .brand-container {
+        max-width: 970px;
+    }
+    .burger-menu {
+        max-width: 970px;
+    }
+    .burger-menu a {
+        font-size: 14px;
+    }
+    .contact-container {
+        max-width: 700px;
+    }
+    .footer {
+        max-width: 1100px;
+    }
+    .main-pic {
+        margin-right: 0;
+        flex-basis: 500px;
+    }
+    .main-about h1 {
+        font-size: 35px;
+    }
+    .main-about h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 976px) {
+    .main-about h1 {
+        width: 300px;
+        font-size: 20px;
+    }
+    .main-about p:nth-child(2) {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    .main-about p:nth-child(4) {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    .main-about h2 {
+        font-size: 18px;
+        padding-top: 32px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-content {
+        margin-top: 25px;
+    }
+    .main-about h1::after {
+        width: 45%;
+        height: 3px;
+        background: #EC3131;
+        left: 0.2%;
+        top: 110%;
+    }
+    .main-about h2 {
+        font-size: 20px;
+    }
+    .colection-container {
+        height: 100%;
+    }
+    body {
+        background-color: #F6F6F6;
+    }
+    .current-page {
+        display: none;
+    }
+    .contact-wrapper {
+        background-color: #FFFFFF;
+    }
+    .nav-logo {
+        max-width: 700px;
+        border: none;
+    }
+    .menu {
+        max-width: 700px;
+    }
+    .main-container {
+        max-width: 700px;
+        background-image: url(../img/Mask\ Group\ 6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        padding-bottom: 60px;
+    }
+    .language {
+        display: none;
+    }
+    .logos {
+        display: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .colection-container {
+        max-width: 700px;
+    }
+    .colection {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .colection span {
+        border: none;
+    }
+    .colection h1 {
+        font-size: 40px;
+    }
+    .colection h1::before {
+        display: none;
+    }
+    .col-hr {
+        display: block;
+        margin: 0 auto;
+    }
+    .col {
+        padding-top: 25px;
+    }
+    .next {
+        display: none;
+    }
+    .prev {
+        display: none;
+    }
+    .btns {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 5;
+    }
+    .top-products {
+        max-width: 700px;
+        padding-top: 30px;
+    }
+    .product-links {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .product-links div {
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        height: 30px;
+    }
+    .SunGlasses-Swiper {
+        max-width: 700px;
+    }
+    .swiper-sun {
+        padding-top: 28px;
+    }
+    .products-pagi {
+        transform: translateX(43.3%);
+    }
+    .main-container {
+        border-bottom: none;
+    }
+    .main-pagi::before {
+        content: '';
+        display: none;
+    }
+    .main-pagi::after {
+        content: "";
+        display: none;
+    }
+    .brand-container {
+        max-width: 700px;
+    }
+    .brand-container {
+        display: none;
+    }
+    .contact-wrapper {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+    .contact {
+        padding: 10px;
+    }
+    footer {
+        height: 316px;
+        margin-bottom: 90px;
+    }
+    .soc-3 {
+        flex-basis: 300px;
+    }
+    .footer {
+        max-width: 700px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .main-pic {
+        display: none;
+    }
+    .fullscr-logos {
+        display: none;
+    }
+}
+
+@media (max-width:720px) {
+    .logo img {
+        max-width: 250px;
+    }
+    .search-btn-resp {
+        display: block;
+        margin-left: 120%;
+    }
+    .main-content {
+        padding: 15px;
+    }
+    .main-about h1 {
+        font-weight: 100;
+    }
+    .main-container {
+        border-bottom: 1px solid #999999;
+    }
+    .main-about h1::after {
+        height: 2px;
+    }
+    .brand-container {
+        display: flex;
+    }
+    .respo-logos {
+        display: block;
+    }
+    .brand-container {
+        height: 100px;
+        padding-bottom: 15px;
+        margin-top: 0;
+    }
+    .brand-logos:nth-child(1) {
+        justify-content: space-around;
+    }
+    .brand-logos:nth-child(2) {
+        justify-content: space-around;
+        padding-top: 0;
+    }
+    .main-logo {
+        display: none;
+    }
+    .resp-main-logo {
+        display: block;
+    }
+}
