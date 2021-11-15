@@ -181,8 +181,9 @@ body {
     align-items: center;
 }
 
-.page-container span:nth-child(1) {
+.page-container a:nth-child(1) {
     padding-right: 19px;
+    color: #000000;
 }
 
 .page-container span:nth-child(2) {
@@ -291,7 +292,7 @@ body {
 }
 
 .main-about {
-    flex-basis: 700px;
+    width: 100%;
 }
 
 .main-about h1 {
@@ -352,32 +353,71 @@ body {
 /* Brand Logos  */
 
 .brand-container {
-    max-width: 1308px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 180px;
-    margin-top: 108px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
 }
 
-.brand-logos:nth-child(1) {
+.brand-logos {
     display: flex;
     justify-content: space-between;
     flex: auto;
     align-items: center;
 }
 
-.brand-logos:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    flex: auto;
-    align-items: center;
-    padding-top: 64px;
+.brand-logos img {
+    width: 180px;
 }
 
 .respo-logos {
     display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.logosSwiper {
+    max-width: 1308px;
+}
+
+.logosSwiper .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosSwiper img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.react svg path {
+    stroke: #DB5038;
+}
+
+.sun-prev {
+    left: 12%;
+    color: black;
+}
+
+.sun-next {
+    right: 12%;
+    color: black;
+}
+
+.sun-next::after {
+    font-size: 25px;
+}
+
+.sun-prev::after {
+    font-size: 25px;
 }
 
 /* Contact and Address */
@@ -485,7 +525,7 @@ footer {
     .main-container {
         max-width: 970px;
     }
-    .brand-container {
+    .logosSwiper {
         max-width: 970px;
     }
     .burger-menu {
@@ -534,6 +574,9 @@ footer {
     }
     .main-content {
         margin-top: 25px;
+    }
+    .logosSwiper {
+        max-width: 700px;
     }
     .main-about h1::after {
         width: 45%;
@@ -654,12 +697,6 @@ footer {
         content: "";
         display: none;
     }
-    .brand-container {
-        max-width: 700px;
-    }
-    .brand-container {
-        display: none;
-    }
     .contact-wrapper {
         padding: 20px;
         margin-top: 0;
@@ -700,6 +737,9 @@ footer {
         display: block;
         margin-left: 120%;
     }
+    .logosSwiper {
+        max-width: 420px;
+    }
     .main-content {
         padding: 15px;
     }
@@ -735,5 +775,45 @@ footer {
     }
     .resp-main-logo {
         display: block;
+    }
+}
+
+@media (max-width: 1420px) {
+    .sun-prev {
+        display: none;
+    }
+    .sun-next {
+        display: none;
+    }
+    .prev {
+        margin-left: 75%;
+    }
+}
+
+@media (max-width:550px) {
+    .logosSwiper {
+        max-width: 350px;
+    }
+    .main-about h1 {
+        width: 200px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1810px) {
+    .sun-prev {
+        left: 8%;
+    }
+    .sun-next {
+        right: 8%;
+    }
+}
+
+@media (max-width: 1640px) {
+    .sun-prev {
+        left: 2%;
+    }
+    .sun-next {
+        right: 2%;
     }
 }

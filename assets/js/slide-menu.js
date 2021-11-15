@@ -92,4 +92,4 @@ let wide = document.querySelector('#myselect');
 
 wide.classList.toggle('wide', window.matchMedia('(max-width:970px').matches);
 
-console.log(wide)
+

@@ -198,7 +198,7 @@ body {
   padding-left: 5px;
 }
 
-.page-container a:nth-child(3) {
+.page-container span:nth-child(2) {
   position: relative;
   color: #ec3131;
   padding-left: 15px;
@@ -319,7 +319,7 @@ body {
   width: 100%;
 }
 
-.desc .descrip:nth-child(2n + 1) {
+.desc .descrip:nth-child(2n+1) {
   background: #f7f7f7;
 }
 
@@ -598,18 +598,22 @@ input:focus-visible {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .gradation-all--withbase .quan-count .bc-right {
   margin-top: 15px;
 }
+
 .gradation-all--withbase .quan-count .bc-right .power {
   flex-direction: column;
   align-items: flex-start;
   margin-right: 10px;
 }
+
 .gradation-all--withbase .quan-count .bc-right .power label {
   margin-bottom: 5px;
   font-size: 12px;
 }
+
 .gradation-all--withbase .quan-count .count {
   margin-top: 25px;
 }
@@ -652,6 +656,7 @@ input:focus-visible {
   align-items: center;
   justify-content: space-between;
 }
+
 .power {
   width: 100%;
   display: flex;
@@ -836,12 +841,14 @@ footer {
   align-items: center;
   width: 100%;
 }
+
 .checkbox input {
   appearance: none;
   position: absolute;
   opacity: 0;
 }
-.checkbox input:checked ~ .checkmark::after {
+
+.checkbox input:checked~.checkmark::after {
   background-color: red;
 }
 
@@ -1179,7 +1186,6 @@ footer {
     margin-bottom: 50px;
     margin-top: 20px;
   }
-
   .gradation-wrapper {
     padding: 15px;
     max-width: 600px;
@@ -1213,7 +1219,6 @@ footer {
   .checkbox-title {
     font-size: 14px;
   }
-
   .resGradation-wrapper h1 {
     font-family: "Myriad GEO Mtavruli";
     font-weight: 500;

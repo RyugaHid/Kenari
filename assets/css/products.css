@@ -23,6 +23,16 @@ span.irs-line {
     height: 2px !important;
 }
 
+.products-pagin ul {
+    display: flex;
+    margin: 45px auto 70px;
+    max-width: 713px;
+}
+
+.products-pagin ul li {
+    margin-left: 10px;
+}
+
 span.irs-bar {
     color: #EC3131 !important;
     height: 2px !important;
@@ -256,21 +266,22 @@ element.style {
     align-items: center;
 }
 
-.page-container span:nth-child(1) {
+.page-container a:nth-child(1) {
     padding-right: 19px;
+    color: #000000;
 }
 
-.page-container span:nth-child(2) {
+.page-container a:nth-child(2) {
     position: relative;
     color: #EC3131;
 }
 
-.page-container span:nth-child(3) {
+.page-container a:nth-child(3) {
     position: relative;
     color: #EC3131;
 }
 
-.page-container span:nth-child(3)::before {
+.page-container a:nth-child(3)::before {
     content: '';
     border-radius: 100%;
     display: block;
@@ -283,7 +294,7 @@ element.style {
     z-index: 10;
 }
 
-.page-container span:nth-child(2)::before {
+.page-container a:nth-child(2)::before {
     content: '';
     border-radius: 100%;
     display: block;
@@ -829,6 +840,14 @@ footer {
     .products-container {
         max-width: 970px;
     }
+    .products-pagin ul {
+        max-width: 400px;
+    }
+    .products-pagin ul li span {
+        display: flex;
+        justify-content: space-between;
+        width: 18px;
+    }
     form {
         flex-basis: 125%;
     }
@@ -1143,6 +1162,12 @@ footer {
         max-width: 600px;
         padding: 40px 15px 40px 15px;
     }
+    .products-pagin ul {
+        max-width: 300px;
+    }
+    .products-pagin a {
+        padding: 5px 10px;
+    }
     .logo img {
         max-width: 250px;
     }
@@ -1235,6 +1260,12 @@ footer {
 @media (max-width:650px) {
     .description p {
         font-size: 12px;
+    }
+    .products-pagin a {
+        padding: 5px 8px;
+    }
+    .products-pagin ul li {
+        margin-left: 5px;
     }
     .description p:nth-child(3) {
         font-size: 12px;

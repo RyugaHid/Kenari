@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/slide-menu.js" defer></script>
     <script src="https://kit.fontawesome.com/73565a2713.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/about.css">
     <title>Document</title>
 </head>
@@ -112,7 +114,7 @@
     <div class="current-page">
 
         <div class="page-container">
-            <span>მთავარი </span>
+            <a href="#!"><span>მთავარი </span></a>
 
             <span> ჩვენ შესახებ</span>
         </div>
@@ -232,35 +234,66 @@
 
     <!-- Brand Logos  -->
 
+
     <div class="brand-container">
-        <div class="brand-logos">
-            <img class="fullscr-logos" src="./assets/img/ray-ban1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/dolce1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/persol1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/Oakley_logo1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/tiffany-co1.png" alt="">
+        <div class="swiper-button-prev sun-prev"></div>
 
-            <img class="respo-logos" src="./assets/img/ray-ban.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-            <img class="respo-logos" src="./assets/img/persol.png" alt="">
-            <img class="respo-logos" src="./assets/img/Oakley_logo.png" alt="">
-            <img class="respo-logos" src="./assets/img/tiffany-co.png" alt="">
+        <div class="swiper logosSwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/lacoste.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/gant.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/vogue.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/guess.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/levi.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
 
         </div>
-        <div class="brand-logos">
-            <img class="fullscr-logos" src="./assets/img/tiffany-co1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/ray-ban1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/dolce1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/persol1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/Oakley_logo1.png" alt="">
+        <div class="swiper-button-next sun-next"></div>
 
-            <img class="respo-logos" src="./assets/img/tiffany-co.png" alt="">
-            <img class="respo-logos" src="./assets/img/ray-ban.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-            <img class="respo-logos" src="./assets/img/persol.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-        </div>
     </div>
+
 
     <!-- Contact and Address  -->
     <div class="contact-wrapper">
@@ -328,7 +361,11 @@
 
 
     </footer>
-    <script src="./assets/js/slide-menu.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/about.js"></script>
+
+
 
 </body>
 

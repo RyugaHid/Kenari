@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Myriad GEO Mtavruli';
+    background-color: #F6F6F6;
 }
 
 /* Navigation  */
@@ -127,10 +128,6 @@ body {
     align-items: center;
 }
 
-.burger-menu a:nth-child(8) {
-    color: #EC3131;
-}
-
 .burger-menu a {
     color: #323030;
 }
@@ -170,7 +167,14 @@ body {
 .current-page {
     width: 100%;
     height: 7vh;
+}
+
+.bg {
     background-color: #F6F6F6;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
 }
 
 .page-container {
@@ -183,22 +187,40 @@ body {
 
 .page-container a:nth-child(1) {
     padding-right: 19px;
-    color: #000000;
+    color: #000;
 }
 
-.page-container a:nth-child(2) {
+.page-container span:nth-child(2) {
     position: relative;
     color: #EC3131;
 }
 
-.page-container a:nth-child(2)::before {
+.page-container span:nth-child(3) {
+    position: relative;
+    color: #EC3131;
+}
+
+.page-container span:nth-child(3)::before {
     content: '';
     border-radius: 100%;
     display: block;
     width: 4px;
     height: 4px;
     background: #EC3131;
-    left: -6.8%;
+    left: -7.8%;
+    top: 42%;
+    position: absolute;
+    z-index: 10;
+}
+
+.page-container span:nth-child(2)::before {
+    content: '';
+    border-radius: 100%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #EC3131;
+    left: -7.8%;
     top: 42%;
     position: absolute;
     z-index: 10;
@@ -278,67 +300,104 @@ body {
 
 /* Main Content  */
 
-.main-container {
+.main-wrapper {
     max-width: 1308px;
     margin: 0 auto;
-    padding-top: 48px;
-    padding-bottom: 69px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
-.main-container h1 {
-    position: relative;
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EC3131;
+}
+
+.heading h1 {
+    font-family: "Myriad GEO Mtavruli";
+    font-weight: 500;
     font-size: 28px;
-    font-weight: 300;
+    text-align: left;
     color: #323030;
 }
 
-.main-container h1::after {
-    content: '';
-    display: block;
-    width: 12%;
-    height: 2px;
-    background: #EC3131;
-    left: 0.2%;
-    top: 113%;
-    position: absolute;
+.bord-bot span:nth-child(2) {
+    color: #DB5038;
 }
 
-.main-container h2 {
-    padding-top: 64px;
-    color: #EC3131;
+.heading p {
+    font-family: "Myriad GEO Mtavruli";
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 300;
+    text-align: left;
+    color: #323030;
 }
 
-.main-container p {
-    padding-top: 12px;
-    font-size: 16px;
-    line-height: 1.3em;
-    font-family: 'FiraGO';
-    letter-spacing: 0.7px;
+.sun-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+    padding: 10px;
+    width: 24%;
+    height: 409px;
 }
 
-/* Info  */
+.accordion {
+    background-color: #FFFFFF;
+}
 
-.info-container {
-    max-width: 1308px;
+.product-img {
+    height: 250px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun-slide hr {
+    width: 49px;
     margin: 0 auto;
+    border: 1px solid #EC3131;
 }
 
-.info h2 {
+.description {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.price {
+    color: #EC3131;
+}
+
+.description p:nth-child(3) {
     font-size: 20px;
-    padding-top: 52px;
+    font-weight: 500;
+    padding-top: 10px;
 }
 
-.info p {
-    font-size: 16px;
-    padding-top: 32px;
-    padding-bottom: 62px;
-    line-height: 1.62em;
+.react {
+    width: 100%;
 }
 
-.respo-text {
-    display: none;
+.react a svg:hover path {
+    stroke: black;
+    transition: 0.5s ease;
+}
+
+.react a svg path {
+    stroke: #a1a0a0;
+    transform: 0.5s ease;
 }
 
 /* Contact and Address */
@@ -442,20 +501,22 @@ footer {
     .page-container {
         max-width: 970px;
     }
-    .main-container {
+    .main-wrapper {
         max-width: 970px;
-    }
-    .brand-container {
-        max-width: 970px;
-    }
-    .contact-container {
-        max-width: 700px;
+        padding-bottom: 45px;
+        padding-top: 25px;
     }
     .burger-menu {
         max-width: 970px;
     }
     .burger-menu a {
         font-size: 14px;
+    }
+    .brand-container {
+        max-width: 970px;
+    }
+    .contact-container {
+        max-width: 700px;
     }
     .footer {
         max-width: 1100px;
@@ -470,23 +531,65 @@ footer {
     .main-about h2 {
         font-size: 25px;
     }
-    .main-wrapper {
-        max-width: 970px;
-    }
     .info-container {
         max-width: 976px;
+    }
+    .transition {
+        transform: translateX(-376px);
+    }
+    .reg-form {
+        left: 63%;
+    }
+    .product-img {
+        height: 200px;
+    }
+    .main-container {
+        padding-bottom: 25px;
     }
 }
 
 @media (max-width: 976px) {
-    .main-container {
+    .main-wrapper {
         max-width: 700px;
+        padding-bottom: 45px;
     }
-    .main-container h1::after {
-        width: 20%;
+    .sun-slide {
+        width: 49%;
+    }
+    .reg-pic {
+        display: none;
+    }
+    .auth-form {
+        flex-basis: 100%;
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+    .auth-form input {
+        width: 100%;
     }
     .burger-menu {
         display: none;
+    }
+    .contact-container {
+        background-color: #FAFAFA;
+    }
+    .auth-form h2 {
+        padding-bottom: 32px;
+        padding-top: 0;
+    }
+    .auth-form a {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        margin-top: 020px;
+    }
+    .auth-form a:nth-child(5) {
+        display: block;
+        background-color: #323030;
+        margin-bottom: 15px;
+    }
+    .main-container h1::after {
+        width: 20%;
     }
     .main-about h1 {
         width: 300px;
@@ -514,9 +617,6 @@ footer {
         left: 0.2%;
         top: 110%;
     }
-    .main-wrapper {
-        max-width: 700px;
-    }
     .main-about h2 {
         font-size: 20px;
     }
@@ -530,7 +630,7 @@ footer {
         display: none;
     }
     .contact-wrapper {
-        background-color: #FFFFFF;
+        background-color: #FAFAFA;
     }
     .nav-logo {
         max-width: 700px;
@@ -660,9 +760,25 @@ footer {
 }
 
 @media (max-width:720px) {
-    .main-container {
+    .main-wrapper {
         max-width: 600px;
-        padding: 15px;
+        padding: 40px 15px 40px 15px;
+    }
+    .description p {
+        font-family: "Myriad GEO Mtavruli";
+        font-weight: 500;
+        font-size: 10px;
+        text-align: center;
+        color: #999;
+    }
+    .description p:nth-child(3) {
+        font-family: 'FiraGO';
+        font-weight: bold;
+        font-size: 12px;
+        color: #323030;
+    }
+    .logo img {
+        max-width: 250px;
     }
     .main-container p {
         line-height: 1.6em;
@@ -675,9 +791,6 @@ footer {
     }
     .logo {
         display: flex;
-    }
-    .main-logoo img {
-        max-width: 250px;
     }
     .search-btn-resp {
         display: block;
@@ -718,11 +831,6 @@ footer {
     .resp-main-logo {
         display: block;
     }
-    .main-wrapper {
-        max-width: 400px;
-        margin: 0;
-        padding: 17px;
-    }
     .content-wrapper h1 {
         padding-bottom: 0;
         font-size: 16px;
@@ -744,5 +852,26 @@ footer {
     }
     p {
         line-height: 1.4em;
+    }
+}
+
+@media (max-width:520px) {
+    .product-img {
+        height: 150px;
+    }
+    .sun-slide {
+        height: 280px;
+    }
+    .heading h1 {
+        font-family: "Myriad GEO Mtavruli";
+        font-weight: 500;
+        font-size: 20px;
+        color: #323030;
+    }
+    .heading p {
+        font-family: "Myriad GEO Mtavruli";
+        font-weight: 500;
+        font-size: 12px;
+        color: #323030;
     }
 }

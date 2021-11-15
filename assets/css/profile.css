@@ -186,21 +186,22 @@ body {
     align-items: center;
 }
 
-.page-container span:nth-child(1) {
+.page-container a:nth-child(1) {
     padding-right: 19px;
+    color: #000000;
 }
 
-.page-container span:nth-child(2) {
+.page-container a:nth-child(2) {
     position: relative;
     color: #EC3131;
 }
 
-.page-container span:nth-child(3) {
+.page-container a:nth-child(3) {
     position: relative;
     color: #EC3131;
 }
 
-.page-container span:nth-child(3)::before {
+.page-container a:nth-child(3)::before {
     content: '';
     border-radius: 100%;
     display: block;
@@ -213,7 +214,7 @@ body {
     z-index: 10;
 }
 
-.page-container span:nth-child(2)::before {
+.page-container a:nth-child(2)::before {
     content: '';
     border-radius: 100%;
     display: block;
