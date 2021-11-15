@@ -16,15 +16,20 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <div class="language">
-                    <p>ENG</p>
+                    <a href="#!" class="language-active">ENG.</a>
+                    <a href="#!" class="language-disable">GEO.</a>
+
                 </div>
                 <div class="logo">
-                    <img src="./assets/img/1kenarilogo1.png" alt="logo">
+                    <a href="./index.html" class="main-logoo">
+                        <img src="./assets/img/1kenarilogo1.png" alt="logo">
+                    </a>
+
+
                 </div>
                 <div class="logos">
                     <img src="./assets/img/Group 183.png" alt="profile">
                     <img class="shop" src="./assets/img/Group 7.png" alt="shop">
-
                 </div>
             </div>
 
@@ -33,32 +38,143 @@
             <div class="menu">
                 <div>
                     <ul class="catalog">
-                        <li>კონტაქტური ლინზები</li>
-                        <li>მზის სათვალე</li>
-                        <li>ოპტიკური სათვალე</li>
+                        <li>
+                            <a href="#!">კონტაქტური ლინზები</a>
+                        </li>
+                        <li>
+                            <a href="#!">მზის სათვალეები</a>
+                        </li>
+                        <li>
+                            <a href="#!">ოპტიკური სათვალეები</a>
+                        </li>
+                        <li>
+                            <a href="#!">SALE</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="search">
-                    <img class="search-btn" src="./assets/img/search.png" alt="search">
-                    <img class="menu-btn" src="./assets/img/menu.png" alt="menu">
-                    <p>მენიუ</p>
+                    <a href="#!">
+                        <img class="search-btn" src="./assets/img/search.png" alt="search">
+                    </a>
+                    <a href="#!" class="burg">
+                        მენიუ
+                    </a>
+                    <a href="#!" class="burg-menu">
+                        <img class="menu-btn" src="./assets/img/menu.png" alt="menu">
+                    </a>
+
+                    <a href="#!" class="closeBtn">
+                        <img class="close" src="./assets/img/Group 788.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="menu-wrapper">
+            <div class="burger-menu none">
+                <ul>
+                    <a href="index.html">
+                        <li>მთავარი</li>
+                    </a>
+                    <a href="products.html">
+                        <li>პროდუქცია</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ჩვენ შესახებ</li>
+                    </a>
+                    <a href="delivery.html">
+                        <li>მიწოდების პირობები</li>
+                    </a>
+                    <a href="gift-card.html">
+                        <li>სასაჩუქრე ბარათი</li>
+                    </a>
+                    <a href="#!">
+                        <li>ბლოგი</li>
+                    </a>
+                    <a href="FAQ.html">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="terms.html">
+                        <li>წესები და პირობები</li>
+                    </a>
+                    <a href="#!">
+                        <li>კონტაქტი</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
     </nav>
+    <!-- Responsive Menu  -->
+
+    <div class="responsive-menu hide">
+        <div class="responsive-catalog">
+            <div class="catalog-cont">
+                <a href="#!">მზის სათვალე</a>
+                <a href="#!">
+                    <img src="./assets/img/right.png" alt="">
+                </a>
+            </div>
+            <div class="catalog-cont">
+                <a href="#!">ოპტიკური სათვალე</a>
+                <a href="#!">
+                    <img src="./assets/img/right.png" alt="">
+                </a>
+            </div>
+            <div class="catalog-cont">
+                <a href="#!">კონტაქტური ლინზები</a>
+                <a href="#!">
+                    <img src="./assets/img/right.png" alt="">
+                </a>
+            </div>
+            <div class="catalog-cont">
+                <a href="#!">SALE</a>
+                <a href="#!">
+                    <img src="./assets/img/right.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="responsive-menu-nav">
+            <ul>
+                <li><a href="index.html">
+                        მთავარი
+                    </a></li>
+                <li><a href="products.html">
+                        პროდუქცია
+                    </a></li>
+                <li><a href="about.html">
+                        ჩვენ შესახებ
+                    </a></li>
+                <li><a href="delivery.html">
+                        მიწოდების პირობები
+                    </a></li>
+                <li><a href="gift-card.html">
+                        სასაჩუქრე ბარათი
+                    </a></li>
+                <li><a href="FAQ.html">
+                        FAQ
+                    </a></li>
+                <li><a href="terms.html">
+                        წესები და პირობები
+                    </a></li>
+                <li><a href="#!">
+                        კონტაქტი
+                    </a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Main Slider -->
     <div class="main-container">
         <div class="swiper mySwiper firstSwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" style="background-image: url(assets/img/main.png);">
                     <div class="colection-container">
                         <div class="colection">
-                            <h1><span>ახალი</span> კოლექცია</h1>
+                            <h1>ახალი კოლექცია</h1>
                             <hr class="col-hr">
                             <div class="col">
-                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე შენი</p>
-                                <p>ახალიმზის სათვალე და დაიწყე ფიქრი</p>
+                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე</p>
+                                <p>ახალი მზის სათვალე და დაიწყე ფიქრი</p>
                                 <p>დასვენებაზე.</p>
                             </div>
 
@@ -67,13 +183,13 @@
                     </div>
 
                 </div>
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" style="background-image: url(assets/img/main.png);">
                     <div class="colection-container">
                         <div class="colection">
-                            <h1><span>ახალი</span> კოლექცია</h1>
+                            <h1>ახალი კოლექცია</h1>
                             <hr class="col-hr">
                             <div class="col">
-                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე შენი</p>
+                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე </p>
                                 <p>ახალიმზის სათვალე და დაიწყე ფიქრი</p>
                                 <p>დასვენებაზე.</p>
                             </div>
@@ -82,13 +198,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" style="background-image: url(assets/img/main.png);">
                     <div class="colection-container">
                         <div class="colection">
-                            <h1><span>ახალი</span> კოლექცია</h1>
+                            <h1>ახალი კოლექცია</h1>
                             <hr class="col-hr">
                             <div class="col">
-                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე შენი</p>
+                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე </p>
                                 <p>ახალიმზის სათვალე და დაიწყე ფიქრი</p>
                                 <p>დასვენებაზე.</p>
                             </div>
@@ -97,13 +213,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" style="background-image: url(assets/img/main.png);">
                     <div class="colection-container">
                         <div class="colection">
-                            <h1><span>ახალი</span> კოლექცია</h1>
+                            <h1>ახალი კოლექცია</h1>
                             <hr class="col-hr">
                             <div class="col">
-                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე შენი</p>
+                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე </p>
                                 <p>ახალიმზის სათვალე და დაიწყე ფიქრი</p>
                                 <p>დასვენებაზე.</p>
                             </div>
@@ -112,13 +228,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide">
+                <div class="swiper-slide slide" style="background-image: url(assets/img/main.png);">
                     <div class="colection-container">
                         <div class="colection">
-                            <h1><span>ახალი</span> კოლექცია</h1>
+                            <h1>ახალი კოლექცია</h1>
                             <hr class="col-hr">
                             <div class="col">
-                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე შენი</p>
+                                <p>დროა ავღნიშნოთ ზაფხულის მოსვლა. აირჩიე </p>
                                 <p>ახალიმზის სათვალე და დაიწყე ფიქრი</p>
                                 <p>დასვენებაზე.</p>
                             </div>
@@ -141,18 +257,18 @@
             </div>
 
 
-
-
-
         </div>
+
     </div>
+
 
     <!-- Responsive Navigation -->
 
     <div class="btns">
         <a href="#!"><img src="./assets/img/search.png" alt="search"></a>
         <a href="#!"><img src="./assets/img/Group 666.png" alt="home"></a>
-        <a href="#!"><img src="./assets/img/menu.png" alt="menu"></a>
+        <a href="#!" class="close-btn none"><img src="./assets/img/Group 788.png" alt=""></a>
+        <a href="#!" class="slide-up"><img src="./assets/img/menu.png" alt="menu"></a>
         <a href="#!"><img src="./assets/img/Group 7.png" alt="shop"></a>
         <a href="#!"><img src="./assets/img/Group 183.png" alt="profile"></a>
     </div>
@@ -179,122 +295,268 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
-                        <img src="./assets/img/JBL 1.png" width="100%" alt="product">
-                        <hr>
+                        <img src="./assets/img/NoPath - Copy (4).png" width="100%" alt="product">
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+
+                        <p><span class="old-price">1250₾</span> 800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/WOODIES-EBONY-CLUBangled_grande.png" width="100%" alt="product">
-                        <hr>
+
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/WOODIES-1-678angled_grande.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/JBL 1.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/JBL 1.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/WOODIES-EBONY-CLUBangled_grande.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/WOODIES-1-678angled_grande.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
                     </div>
                 </div>
                 <div class="swiper-slide sun-slide">
                     <div class="react">
-                        <a href="#!"><img src="./assets/img/Group 16.png" alt="!"></a>
                         <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                    <g id="shopping-cart" transform="translate(1403 -125)">
+                                        <path id="Path_1134" data-name="Path 1134" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(8 20)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="2" />
+                                        <path id="Path_1133" data-name="Path 1133" d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z"
+                                            transform="translate(19 20)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-width="2" />
+                                        <path id="Path_6" data-name="Path 6"
+                                            d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                            fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" />
+                                    </g>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                        transform="translate(1403 -126)" fill="none" />
+                                </g>
+                            </svg></a>
                     </div>
                     <div class="product-img">
                         <img src="./assets/img/JBL 1.png" width="100%" alt="product">
-                        <hr>
                     </div>
+                    <hr>
+
                     <div class="description">
                         <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
                         <p class="disabled black">Headphones Black</p>
-                        <p>800.00 <span class="price">₾</span> </p>
+                        <p><span class="old-price">1250₾</span>800.00 </p>
 
                     </div>
                 </div>
@@ -321,10 +583,350 @@
         <div class="swiper-button-next sun-next"></div>
     </div>
 
+
+    <!-- Sale Products -->
+
+    <div class="sales-wrapper">
+        <div class="sale-products">
+            <div class="sale-product-links">
+                <h2>SALE</h2>
+                <div>
+                    <a href="#!" class="sale-active">მზის სათვალე</a>
+                    <a href="#!" class="sale-disabled">ოპტიკური სათვალე</a>
+                    <a href="#!" class="sale-disabled">კონტაქტური ლინზები</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Sale SunGlasses Slider -->
+
+
+        <div class="swiper-sun">
+            <div class="swiper-button-prev sun-prev sale-prev"></div>
+
+            <div class="swiper SunGlasses-Swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/JBL 1.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/WOODIES-EBONY-CLUBangled_grande.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/WOODIES-1-678angled_grande.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/JBL 1.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/JBL 1.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/WOODIES-EBONY-CLUBangled_grande.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/WOODIES-1-678angled_grande.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sun-slide">
+                        <div class="react">
+                            <a href="#!"><img src="./assets/img/Group 15.png" alt="heart"></a>
+                            <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g id="Group_7" data-name="Group 7" transform="translate(-1403 126)">
+                                        <g id="shopping-cart" transform="translate(1403 -125)">
+                                            <path id="Path_1134" data-name="Path 1134"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(8 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_1133" data-name="Path 1133"
+                                                d="M1,0A1,1,0,1,1,0,1,1,1,0,0,1,1,0Z" transform="translate(19 20)"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            <path id="Path_6" data-name="Path 6"
+                                                d="M1,1H5L7.68,14.39a2,2,0,0,0,2,1.61H19.4a2,2,0,0,0,2-1.61L23,6H6"
+                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" />
+                                        </g>
+                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="24" height="24"
+                                            transform="translate(1403 -126)" fill="none" />
+                                    </g>
+                                </svg></a>
+
+                            <p>-20%</p>
+
+                        </div>
+                        <div class="product-img">
+                            <img src="./assets/img/JBL 1.png" width="100%" alt="product">
+                        </div>
+                        <hr>
+
+                        <div class="description">
+                            <p class="disabled">JBL Tune T510 BT Wireless On-Ear </p>
+                            <p class="disabled black">Headphones Black</p>
+                            <p><span class="old-price">1250₾</span>800.00 </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-btn-pagi">
+                    <div class="sale-more-products">
+
+                        <a href="#!">
+                            მეტის ნახვა
+
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-pagination products-pagi"></div>
+
+
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination "></div>
+
+            <div class="swiper-button-next sun-next sale-next"></div>
+        </div>
+    </div>
+
     <!-- Bordered Boxes Container -->
 
     <div class="boxes-container">
+
         <div class="swiper mySwiper boxesSwiper">
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide box-wrapper box-1">
                     <div class="box-layer">
@@ -362,9 +964,11 @@
 
 
             </div>
-            <hr>
 
         </div>
+        <hr>
+
+    </div>
 
 
     </div>
@@ -374,45 +978,68 @@
     <!-- Brand Logos -->
 
     <div class="brand-container">
-        <div class="brand-logos">
-            <img class="fullscr-logos" src="./assets/img/ray-ban1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/dolce1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/persol1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/Oakley_logo1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/tiffany-co1.png" alt="">
+        <div class="swiper-button-prev sun-prev"></div>
 
-            <img class="respo-logos" src="./assets/img/ray-ban.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-            <img class="respo-logos" src="./assets/img/persol.png" alt="">
-            <img class="respo-logos" src="./assets/img/Oakley_logo.png" alt="">
-            <img class="respo-logos" src="./assets/img/tiffany-co.png" alt="">
+        <div class="swiper logosSwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/lacoste.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/gant.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/vogue.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/guess.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/levi.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!">
+                        <img src="./assets/img/ray-ban1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-        <div class="brand-logos">
-            <img class="fullscr-logos" src="./assets/img/tiffany-co1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/ray-ban1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/dolce1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/persol1.png" alt="">
-            <img class="fullscr-logos" src="./assets/img/Oakley_logo1.png" alt="">
+        <div class="swiper-button-next sun-next"></div>
 
-            <img class="respo-logos" src="./assets/img/tiffany-co.png" alt="">
-            <img class="respo-logos" src="./assets/img/ray-ban.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-            <img class="respo-logos" src="./assets/img/persol.png" alt="">
-            <img class="respo-logos" src="./assets/img/dolce.png" alt="">
-
-
-
-
-
-
-
-        </div>
     </div>
     <!-- Background Kenari -->
     <div class="bg-kenari">
         <div class="layer1">
             <div class="layer">
-                <img src="/assets/img/1kenarilogo2.png" alt="">
+                <img src="./assets/img/1kenarilogo2.png" alt="">
 
             </div>
         </div>
@@ -452,9 +1079,35 @@
 
         <div class="footer">
             <div class="soc-media soc-1">
-                <img src="./assets/img/facebook.png" alt="">
-                <img src="./assets/img/instagram.png" alt="">
-                <img src="./assets/img/youtube.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22">
+                    <path id="facebook" d="M18,2H15a5,5,0,0,0-5,5v3H7v4h3v8h4V14h3l1-4H14V7a1,1,0,0,1,1-1h3Z"
+                        transform="translate(-6 -1)" fill="none" stroke="#707070" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <g id="instagram" transform="translate(1.317 1)">
+                        <rect id="Rectangle_102" data-name="Rectangle 102" width="20" height="20" rx="5"
+                            transform="translate(-0.317)" fill="none" stroke="#707070" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                        <path id="Path_1012" data-name="Path 1012" d="M16,11.37A4,4,0,1,1,12.63,8,4,4,0,0,1,16,11.37Z"
+                            transform="translate(-2.148 -2)" fill="none" stroke="#707070" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                        <path id="Path_1013" data-name="Path 1013" d="M17.5,6.5h.01" transform="translate(-2.148 -2)"
+                            fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" />
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24.002" height="17.46" viewBox="0 0 24.002 17.46">
+                    <g id="youtube" transform="translate(1 1)">
+                        <path id="Path_1014" data-name="Path 1014"
+                            d="M22.54,6.42a2.78,2.78,0,0,0-1.94-2C18.88,4,12,4,12,4s-6.88,0-8.6.46a2.78,2.78,0,0,0-1.94,2A29,29,0,0,0,1,11.75a29,29,0,0,0,.46,5.33A2.78,2.78,0,0,0,3.4,19c1.72.46,8.6.46,8.6.46s6.88,0,8.6-.46a2.78,2.78,0,0,0,1.94-2A29,29,0,0,0,23,11.75a29,29,0,0,0-.46-5.33Z"
+                            transform="translate(-0.999 -4)" fill="none" stroke="#707070" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                        <path id="Path_1015" data-name="Path 1015" d="M9.75,15.02l5.75-3.27L9.75,8.48Z"
+                            transform="translate(-0.999 -4)" fill="none" stroke="#707070" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                    </g>
+                </svg>
             </div>
             <div class="soc-media soc-2">
                 <img src="./assets/img/g4158.png" alt="">
